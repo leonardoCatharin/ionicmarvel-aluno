@@ -1,0 +1,64 @@
+.icon-back{
+  font-size: 10px;
+}
+
+.character-img{
+  width: 100%;
+  border-radius: 4px;
+}
+
+.page-title {
+  text-align: center;
+  color: var(--dark-smoke);
+  font-size: 1.6rem;
+}
+
+.character-info{
+  color: var(--dark-smoke);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.page-subtitle{
+  color: var(--dark-smoke);
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.comics{
+  margin-bottom: 40px;
+}
+
+.comic-img{
+    width: 80%;
+    border-radius: 4px;
+}
+
+.comic-name{
+    color: var(--dark-smoke);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.comic-description{
+  color: var(--dark-smoke);
+  font-size: 1.0rem;
+}
+
+@media(min-width: 768px){
+  .page-title {
+    text-align: left;
+    color: var(--dark-smoke);
+    font-size: 1.6rem;
+  }
+  
+  .character-info{
+    text-align: left;
+  }
+
+  .page-subtitle{
+    text-align: left;
+    font-size: 1.4rem;
+  }
+}

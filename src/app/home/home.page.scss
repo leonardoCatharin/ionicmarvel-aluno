@@ -1,0 +1,129 @@
+/* cabeçalho e input de busca */
+.fixed-info{
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: var(--dark-snow);
+  z-index: 1000;
+}
+
+.page-title {
+  text-align: center;
+  color: var(--dark-smoke);
+  font-size: 1.6rem;
+}
+
+.page-subtitle{
+  color: var(--dark-smoke);
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.input-form{
+  border-radius: 4px;
+  border: 1px solid var(--dark-snow);
+  background: var(--fullwhite);
+  padding-left: 5px!important;
+  padding-right: 35px!important;
+  overflow: hidden;
+}
+
+.icon-search-character{
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  font-size: 1.5rem;
+  z-index: 1000;
+  color: var(--dark-smoke);
+}
+/* ----- * ----- */
+
+/* listagem dos personagens */
+
+.title-list{
+  color: var(--dark-smoke);
+  font-size: 1rem;
+}
+
+.white-frame-list{
+  background: var(--white);
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.white-frame-list:hover{
+  cursor: pointer;
+  box-shadow: 0px 0px 3px var(--dark);
+}
+
+/* ----- * ----- */
+
+/* item personagem */
+.character-img{
+  height: 48px;
+  width: 48px;
+  border-radius: 4px;
+}
+
+.character-name{
+  color: var(--dark-smoke);
+  font-size: 1.3rem;
+}
+
+.character-info{
+  color: var(--dark-smoke);
+  font-size: 1rem;
+}
+/* ----- * ----- */
+
+/* ----- paginação ----- */
+.go-page{
+  margin: 0 8px;
+  padding: 5px 10px;
+  border: 1px solid var(--dark-snow);
+  border-radius: 4px;
+  font-size: 1.2rem;
+  color: var(--dark-smoke);
+  background: var(--snow);
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+
+.go-page-active{
+  margin: 0 8px;
+  padding: 5px 10px;
+  border: 1px solid var(--blue);
+  border-radius: 4px;
+  font-size: 1.2rem;
+  color: var(--fullwhite);
+  background: var(--blue);
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+
+.icon-nav-page{
+  cursor: pointer;
+}
+
+/* ----- * ----- */
+
+@media(min-width: 768px){
+  .frame-list{
+    margin-bottom: 0px!important;
+  }
+  
+  .class-md-none{
+      display: initial;
+  }
+
+  .page-title{
+    text-align: left;
+    font-size: 2.0rem;
+  }
+
+  .page-subtitle{
+    text-align: left;
+  }
+}

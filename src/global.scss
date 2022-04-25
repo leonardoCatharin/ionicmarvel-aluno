@@ -1,0 +1,73 @@
+@import "~@ionic/angular/css/core.css";
+
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+/* -- GERAIS -- */
+.no-padding {
+    padding: 0;
+}
+.padding-4 {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.class-md-none{
+    display: none;
+}
+
+.content-page {
+    padding: 2vh 3vw;
+}
+
+.none-results {
+    text-align: center;
+    color: var(--dark-smoke);
+    font-size: 1.5rem;
+  }
+
+/* --- */
+
+/* -- HEADER -- */
+
+.header-marvel{
+    background: var(--fullwhite);
+    color: var(--dark-smoke);
+    font-size: 1.2rem;
+}
+
+.name-test{
+    font-size: 0.9rem;
+}
+
+.icon-account{
+  background: var(--white);
+  margin-left: 10px;
+  color: var(--dark-smoke);
+  font-size: 1.5rem;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.icon-account:hover{
+  color: var(--white);
+  background: var(--dark-smoke);
+  cursor: pointer;
+}
+/* --- */
+
+/* footer */
+.footer-marvel{
+    padding: 15px 0;
+    background: var(--fullwhite);
+    color: var(--dark-smoke);
+    font-size: 1.4rem;
+}

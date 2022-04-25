@@ -1,0 +1,48 @@
+<ion-header class="header-marvel">
+    <ion-row class="ion-align-items-center padding-4">
+        <ion-col size="8" size-md="11" class="info-test ion-text-left">
+          Projeto <span class="name-test"> Marvel </span>
+        </ion-col>
+        <ion-col size="4" size-md="1" class="ion-text-right">
+          <span class="icon-account"> CB </span>
+        </ion-col>
+      </ion-row>
+</ion-header>
+
+<ion-content>
+    <!-- vamos programar aqui -->
+</ion-content>
+
+<ion-footer class="footer-marvel">
+    <!-- paginação -->
+    <ion-row>
+      <ion-col size="12" size-md="4" offset-md="4" class="ion-text-center">
+        <ion-row class="ion-align-items-center">
+          
+          <!-- botões para voltar na paginação -->
+          <!-- <ion-col size="1" class="icon-nav-page" (click)="goFirstPage()">
+            <ion-icon name="caret-back"></ion-icon>
+          </ion-col>
+          <ion-col size="1" class="icon-nav-page" (click)="goPreviousPage()">
+            <ion-icon name="chevron-back"></ion-icon>
+          </ion-col> -->
+  
+          <!-- botões de iteração entre as páginas -->
+          <!-- <ion-col size="8">
+            <span *ngFor="let page of pagination.getPages()" [hidden]="page < pagination.getThresholdDown() || page > pagination.getThresholdUp()" [ngClass]="page == pagination.getCurrentPage() ? 'col go-page-active' : 'col go-page'" (click)="goPage(page)">
+              {{ page }}
+            </span>
+          </ion-col> -->
+  
+          <!-- botões para avançar na paginação -->
+          <!-- <ion-col size="1" class="icon-nav-page" (click)="goNextPage()">
+            <ion-icon name="chevron-forward"></ion-icon>
+          </ion-col>
+          <ion-col size="1" class="icon-nav-page" (click)="goLastPage()">
+            <ion-icon name="caret-forward"></ion-icon>
+          </ion-col> -->
+  
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-footer>
