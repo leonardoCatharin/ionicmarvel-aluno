@@ -28,9 +28,7 @@ export class CharacterService {
   public getAllCharacters(pagination: PaginationComponent, filter: string){
     let strFilter = '';
 
-    let param = '&limit=' 
-    + pagination.getLimit() + 
-    '&offset=' + pagination.getOffset() + strFilter;
+    let param = '&limit=' + pagination.getLimit() + '&offset=' + pagination.getOffset() + strFilter;
 
     return new Promise((ret) => {
       this.service.getDados('/v1/public/characters', 
@@ -56,7 +54,7 @@ export class CharacterService {
 
         } else {
           ret([]);
-          
+
         }
       })
     })
