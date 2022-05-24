@@ -38,7 +38,7 @@
       </ion-col>
     </ion-row>
 
-    <ion-row [hidden]="!checking">
+    <ion-row [hidden]="checking">
       <ion-col size="12">
         <ion-row>
           <ion-col size="12" size-md="4" class="title-list">
@@ -55,16 +55,49 @@
         <ion-row *ngFor="let character of characters" class="frame-list" 
         (click)="goDetails(character)">
           <ion-col size="12">
-            <!-- paramos aqui -->
+            <ion-row class="white-frame-list ion-align-items-center">
+              <ion-col size="4" size-md="1" class="col-character">
+                <ion-row class="ion-align-items-center">
+                  <img *ngIf="character.thumbnail && character.thumbnail.path" 
+                       [src]="character.thumbnail.path + '.' + character.thumbnail.extension"
+                       class="character-img">
+                </ion-row>
+              </ion-col>
+              <ion-col size="8" size-md="3" class="col-character">
+                <ion-row class="ion-align-items-center">
+                  <span class="character-name"> {{ character.name }}</span>
+                </ion-row>
+              </ion-col>
+              <ion-col size-md="4" class="class-md-none">
+                <ion-row *ngFor="let serie of character.series.items | slice:0:5;">
+                  <ion-col class="character-info no-padding">
+                    {{ serie.name }}
+                  </ion-col>
+                </ion-row>
+              </ion-col>            
+              <ion-col size-md="4" class="class-md-none">
+                <ion-row *ngFor="let event of character.events.items | slice:0:5;">
+                  <ion-col class="character-info no-padding">
+                    {{ event.name }}
+                  </ion-col>
+                </ion-row>
+              </ion-col>            
+            </ion-row>
           </ion-col>
-
         </ion-row>
+      </ion-col>
 
+      <ion-col size="12" 
+              *ngIf="characters.length == 0" 
+              class="none-results">
+        Nenhum resultado foi encontrado!
       </ion-col>
     </ion-row>
 
     <ion-row [hidden]="!checking">
-
+      <ion-col size="12">
+        <app-loading></app-loading>
+      </ion-col>
     </ion-row>
 
     <ion-row></ion-row>
